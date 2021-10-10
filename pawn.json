@@ -1,0 +1,27 @@
+{
+    "user": "GfGfGfAs",
+    "repo": "regex",
+    "include_path": "include",
+    "resources": [
+        {
+            "name": "^regex-.+-linux?.zip$",
+            "platform": "linux",
+            "archive": true,
+            "includes": ["regex-(.*)"],
+            "plugins": ["regex-(.*)/libRegEx_static.so"]
+        },
+        {
+			"name": "^regex-.+-win?.zip$",
+            "platform": "windows",
+            "archive": true,
+            "includes": ["regex-.+\\/include"],
+            "plugins": ["regex-.+\\/plugins\\/RegEx.dll"],
+            "files": {
+                "regex-.+\\/onig.dll": "onig.dll"
+            }
+        }
+    ],
+    "runtime": {
+        "plugins": ["GfGfGfAs/regex"]
+    }
+}
