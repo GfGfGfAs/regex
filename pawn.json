@@ -4,20 +4,20 @@
     "include_path": "include",
     "resources": [
         {
-            "name": "^regex-.+-linux?.zip$",
+            "name": "linux.tar.gz",
             "platform": "linux",
             "archive": true,
-            "includes": ["regex-(.*)"],
-            "plugins": ["regex-(.*)/libRegEx_static.so"]
+            "includes": [""],
+            "plugins": ["libRegEx_static.so"]
         },
         {
-			"name": "^regex-.+-win?.zip$",
+			"name": "win.zip",
             "platform": "windows",
             "archive": true,
-            "includes": ["regex-.+\\/include"],
-            "plugins": ["regex-.+\\/plugins\\/RegEx.dll"],
+            "includes": ["include"],
+            "plugins": ["/plugins/RegEx.dll"],
             "files": {
-                "regex-.+\\/onig.dll": "onig.dll"
+                "onig.dll": "onig.dll"
             }
         }
     ],
