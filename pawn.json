@@ -15,7 +15,7 @@
             "platform": "windows",
             "archive": true,
             "includes": ["include"],
-            "plugins": ["/plugins/RegEx.dll"],
+            "plugins": ["RegEx.dll"],
             "files": {
                 "onig.dll": "onig.dll"
             }
